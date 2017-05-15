@@ -2,7 +2,7 @@
 
 Сборка
 ------
- `npm install`
+ `npm install`<br>
  `npm run build`
  
  Запуск
