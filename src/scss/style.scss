@@ -1,0 +1,56 @@
+@import "reset.scss";
+
+body {
+  font-family: 'SansSerif';
+  font-size: 1.5rem;
+}
+header {
+  background: black;
+  padding: 20px;
+
+  a {
+    color: aliceblue;
+    text-decoration: none;
+    &:hover {
+      color: white;
+    }
+
+  }
+}
+main {
+  padding: 20px;
+
+  .auth-btn {
+    display: inline-block;
+    background: #507299;
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  .photo-preview {
+    text-decoration: none;
+    div {
+      cursor: pointer;
+      width: 200px;
+      height: 150px;
+      display: inline-block;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .photo-view {
+    margin-bottom: 10px;
+
+    .photo {
+      &-image { margin-bottom: 20px; }
+      &-text { font-size: 1rem; }
+      &-date { font-size: 1rem; }
+    }
+  }
+}

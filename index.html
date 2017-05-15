@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> VK Gallery Test Task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link href="/dist/style.css" rel="stylesheet">
+    <script src="/dist/libs.js"></script>
+    <script src="/dist/script.js"></script>
+    <script src="/dist/require-config.js"></script>
+</head>
+<body>
+
+<header></header>
+<main></main>
+
+<!-- TODO: Эти темплейты можно разнести по разным html-файлам и уже подгружать их оттуда.
+ Плюс проверять, если подгружен темплейт, то брать из кэша -->
+<script id="header" type="text/html">
+    <h2>
+        <a href="/">
+            Фотографии пользователя из VK.com
+        </a>
+    </h2>
+</script>
+
+<script id="auth" type="text/html">
+    <a class="auth-btn" href="https://oauth.vk.com/authorize?client_id=6029078&display=page&redirect_uri=http://photo.loc/auth&scope=photos&response_type=token&v=5.64&state=123456">Авторизоваться через VK.com</a>
+</script>
+
+<script id="photos" type="text/html">
+    <% _.each(items, function(item){ %>
+        <a class="photo-preview"  href="/photo/<%= item.id %>">
+            <div style="background-image: url('<%= item.photo_604 %>');"></div>
+        </a>
+    <% }); %>
+</script>
+
+<script id="photo" type="text/html">
+    <div class="photo-view">
+        <div class="photo-image"><img src="<%= photo_807%>"/></div>
+        <div class="photo-date"><% print(moment(new Date(date*1000)).format('DD/MM/YYYY')) %></div>
+        <div class="photo-text"><%= text %></div>
+    </div>
+
+</script>
+<!-- /templates-->
+
+</body>
+</html>

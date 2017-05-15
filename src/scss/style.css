@@ -1,0 +1,75 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button, select, input, textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  background: transparent;
+  border: 0 none;
+  box-sizing: border-box;
+  outline: 0 none; }
+
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: 'SansSerif';
+  font-size: 1.5rem; }
+
+header {
+  background: black;
+  padding: 20px; }
+  header a {
+    color: aliceblue;
+    text-decoration: none; }
+    header a:hover {
+      color: white; }
+
+main {
+  padding: 20px; }
+  main .auth-btn {
+    display: inline-block;
+    background: #507299;
+    padding: 20px;
+    color: aliceblue;
+    text-decoration: none; }
+    main .auth-btn:hover {
+      color: white; }
+  main .photo-preview {
+    text-decoration: none; }
+    main .photo-preview div {
+      cursor: pointer;
+      width: 200px;
+      height: 150px;
+      display: inline-block;
+      background-size: cover;
+      background-repeat: no-repeat; }
+  main .photo-view {
+    margin-bottom: 10px; }
+    main .photo-view .photo-image {
+      margin-bottom: 20px; }
+    main .photo-view .photo-text {
+      font-size: 1rem; }
+    main .photo-view .photo-date {
+      font-size: 1rem; }
+
+/*# sourceMappingURL=style.css.map */
